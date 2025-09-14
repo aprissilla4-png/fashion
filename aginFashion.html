@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A-GIN FASHION - Toko Online Fashion Modern</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/heroicons/2.1.1/24/outline/heroicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="agin.css">
+</head>
+
+<body class="bg-gray-50">
+    <header class="bg-white shadow-md fixed top-0 left-0 right-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-3xl font-bold text-pink-500">A-GIN FASHION</a>
+            <div class="hidden md:flex space-x-8 items-center">
+                <a href="#home" class="text-gray-600 hover:text-pink-500">Home</a>
+                <a href="#about" class="text-gray-600 hover:text-pink-500">About</a>
+                <a href="#produk" class="text-gray-600 hover:text-pink-500">Produk</a>
+                <a href="#promo" class="text-gray-600 hover:text-pink-500">Promo</a>
+                <a href="#contact" class="text-gray-600 hover:text-pink-500">Contact</a>
+            </div>
+            <div class="md:hidden">
+                <button id="menu-btn" class="text-gray-600 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden">
+            <a href="#home" class="block py-2 px-6 text-sm text-gray-600 hover:bg-pink-50">Home</a>
+            <a href="#about" class="block py-2 px-6 text-sm text-gray-600 hover:bg-pink-50">About</a>
+            <a href="#produk" class="block py-2 px-6 text-sm text-gray-600 hover:bg-pink-50">Produk</a>
+            <a href="#promo" class="block py-2 px-6 text-sm text-gray-600 hover:bg-pink-50">Promo</a>
+            <a href="#contact" class="block py-2 px-6 text-sm text-gray-600 hover:bg-pink-50">Contact</a>
+        </div>
+    </header>
+
+    
+    <main class="pt-20"> 
+        <section id="home" class="hero-banner h-[85vh] flex items-center justify-center text-white text-center">
+            <div class="container mx-auto px-6">
+                <h1 class="text-4xl md:text-6xl font-bold mb-4 animate-fade-in-down">Big Discount – Fashion Lifestyle</h1>
+                <p class="text-lg md:text-2xl mb-8 animate-fade-in-up">khusus Daerah <span class="text-yellow-300 font-bold">Sumba NTT dan So,e TTS</span></p>
+                <a href="#produk" class="bg-pink-500 hover:bg-pink-600 text-white font-bold py-3 px-8 rounded-full text-lg transition duration-300">
+                    Shop Now
+                </a>
+            </div>
+        </section>
+        
+        <section id="about" class="py-16 bg-white">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl font-bold text-gray-800 mb-2">Kategori Pilihan</h2>
+                <p class="text-gray-500 mb-10">Temukan gaya terbaikmu dari kategori favorit kami.</p>
+                
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+                    <div class="relative rounded-lg overflow-hidden shadow-sm group cursor-pointer h-48">
+                        <img src="crop.jpg" alt="Baju Crop" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center p-2 text-center">
+                            <h3 class="font-bold text-xl text-white tracking-wider uppercase">Baju Wanita Crop</h3>
+                        </div>
+                    </div>
+                    <div class="relative rounded-lg overflow-hidden shadow-sm group cursor-pointer h-48">
+                        <img src="celana.jpg" alt="Celana" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center p-2 text-center">
+                            <h3 class="font-bold text-xl text-white tracking-wider uppercase">Celana</h3>
+                        </div>
+                    </div>
+                    <div class="relative rounded-lg overflow-hidden shadow-sm group cursor-pointer h-48">
+                        <img src="sepatu.jpg" alt="Sepatu" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center p-2 text-center">
+                            <h3 class="font-bold text-xl text-white tracking-wider uppercase">Sepatu</h3>
+                        </div>
+                    </div>
+                    <div class="relative rounded-lg overflow-hidden shadow-sm group cursor-pointer h-48">
+                        <img src="kecantikan.jpg" alt="Kecantikan" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center p-2 text-center">
+                            <h3 class="font-bold text-xl text-white tracking-wider uppercase">Produk Kecantikan</h3>
+                        </div>
+                    </div>
+                    <div class="relative rounded-lg overflow-hidden shadow-sm group cursor-pointer h-48">
+                        <img src="dres.jpg" alt="Dress" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center p-2 text-center">
+                            <h3 class="font-bold text-xl text-white tracking-wider uppercase">Dress</h3>
+                        </div>
+                    </div>
+                </div>
+                </div>
+        </section>
+        
+        <section id="banner" class="pb-16 bg-white"> <div class="container mx-auto px-6">
+                <img src="banner.jpg" alt="Promo Banner" class="w-full rounded-lg shadow-md">
+            </div>
+        </section>
+
+        <section id="produk" class="py-16">
+            <div class="container mx-auto px-6">
+                <div class="flex flex-col md:flex-row justify-between md:items-center gap-4 mb-10">
+                    <div>
+                        <h2 class="text-3xl font-bold text-gray-800">Produk Trending</h2>
+                        <p class="text-gray-500">Koleksi terlaris yang paling dicari.</p>
+                    </div>
+                    
+                    <div>
+                       
+                    </div>
+                    </div>
+                
+                <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-8">
+                    <div class="product-card bg-white rounded-lg overflow-hidden shadow-lg cursor-pointer" 
+                        data-name="Baju anak kecil" 
+                        data-price="Rp 60.000" 
+                        data-discount="Rp 50.000" 
+                        data-image="kecil.jpg"
+                        data-desc="baju anak kecil bisa untuk jalan jalan atau pakai dirumah. Tersedia dalam berbagai ukuran.">
+                        <img src="kecil.jpg" alt="kecil.jpg" class="w-full h-64 object-cover">
+                        <div class="p-4">
+                            <h3 class="font-semibold text-lg text-gray-800">baju anak kecil</h3>
+                            <div class="flex items-center mt-2">
+                                <p class="text-lg font-bold text-pink-500">Rp 50.000</p>
+                                <p class="text-sm text-gray-500 line-through ml-2">Rp 60.000</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card bg-white rounded-lg overflow-hidden shadow-lg cursor-pointer"
+                        data-name="Sneakers Urban Hype" 
+                        data-price="Rp 450.000" 
+                        data-discount="Rp 350.000" 
+                        data-image="https://placehold.co/400x400/a5f3fc/ffffff?text=Produk+2"
+                        data-desc="Sneakers nyaman dengan desain modern, pas untuk menemani aktivitas harianmu. Dibuat dengan material berkualitas tinggi.">
+                        <img src="https://placehold.co/400x400/a5f3fc/ffffff?text=Produk+2" alt="Produk 2" class="w-full h-64 object-cover">
+                        <div class="p-4">
+                            <h3 class="font-semibold text-lg text-gray-800">Sneakers Urban</h3>
+                            <div class="flex items-center mt-2">
+                                <p class="text-lg font-bold text-pink-500">Rp 350.000</p>
+                                <p class="text-sm text-gray-500 line-through ml-2">Rp 450.000</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card bg-white rounded-lg overflow-hidden shadow-lg cursor-pointer"
+                        data-name="Tas Selempang Klasik" 
+                        data-price="Rp 300.000" 
+                        data-discount="Rp 225.000" 
+                        data-image="https://placehold.co/400x400/fef08a/ffffff?text=Produk+3"
+                        data-desc="Tas selempang dengan desain klasik yang tidak lekang oleh waktu. Kompartemen luas untuk menyimpan barang-barang pentingmu.">
+                        <img src="https://placehold.co/400x400/fef08a/ffffff?text=Produk+3" alt="Produk 3" class="w-full h-64 object-cover">
+                        <div class="p-4">
+                            <h3 class="font-semibold text-lg text-gray-800">Tas Klasik</h3>
+                            <div class="flex items-center mt-2">
+                                <p class="text-lg font-bold text-pink-500">Rp 225.000</p>
+                                <p class="text-sm text-gray-500 line-through ml-2">Rp 300.000</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card bg-white rounded-lg overflow-hidden shadow-lg cursor-pointer"
+                        data-name="Kacamata Aviator Modern" 
+                        data-price="Rp 200.000" 
+                        data-discount="Rp 150.000" 
+                        data-image="https://placehold.co/400x400/bbf7d0/ffffff?text=Produk+4"
+                        data-desc="Lindungi matamu dengan gaya. Kacamata aviator ini memiliki lensa UV protection dan frame yang ringan namun kuat.">
+                        <img src="https://placehold.co/400x400/bbf7d0/ffffff?text=Produk+4" alt="Produk 4" class="w-full h-64 object-cover">
+                        <div class="p-4">
+                            <h3 class="font-semibold text-lg text-gray-800">Kacamata Aviator</h3>
+                            <div class="flex items-center mt-2">
+                                <p class="text-lg font-bold text-pink-500">Rp 150.000</p>
+                                <p class="text-sm text-gray-500 line-through ml-2">Rp 200.000</p>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="product-card bg-white rounded-lg overflow-hidden shadow-lg cursor-pointer"
+                        data-name="Jaket Denim" 
+                        data-price="Rp 400.000" 
+                        data-discount="Rp 320.000" 
+                        data-image="https://placehold.co/400x400/fbcfe8/ffffff?text=Produk+5"
+                        data-desc="Jaket denim klasik, wajib punya untuk gaya kasual.">
+                        <img src="https://placehold.co/400x400/fbcfe8/ffffff?text=Produk+5" alt="Produk 5" class="w-full h-64 object-cover">
+                        <div class="p-4">
+                            <h3 class="font-semibold text-lg text-gray-800">Jaket Denim</h3>
+                            <div class="flex items-center mt-2">
+                                <p class="text-lg font-bold text-pink-500">Rp 320.000</p>
+                                <p class="text-sm text-gray-500 line-through ml-2">Rp 400.000</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="promo" class="py-16 container mx-auto px-6">
+            <div class="new-arrivals-banner rounded-lg p-10 md:p-20 text-white flex flex-col items-start">
+                <h2 class="text-3xl md:text-5xl font-bold mb-4">New Arrivals</h2>
+                <p class="mb-8 max-w-md">Koleksi terbaru kami telah tiba! Jangan sampai ketinggalan tren fashion terkini.</p>
+                <a href="#produk" class="bg-yellow-400 hover:bg-yellow-500 text-gray-800 font-bold py-3 px-8 rounded-full text-lg transition duration-300">
+                    Shop Now
+                </a>
+            </div>
+        </section>
+    </main>
+    
+    <footer id="contact" class="bg-gray-800 text-white pt-16 pb-8">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="col-span-1 md:col-span-2">
+                    <h3 class="text-2xl font-bold text-pink-400 mb-4">A-GIN FASHION</h3>
+                    <p class="text-gray-400">Toko online fashion terpercaya yang menyediakan produk berkualitas tinggi dengan desain yang selalu up-to-date untuk menunjang gaya hidup modern Anda.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-lg mb-4">Menu Cepat</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-400 hover:text-white">Home</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-white">About</a></li>
+                        <li><a href="#produk" class="text-gray-400 hover:text-white">Produk</a></li>
+                        <li><a href="#promo" class="text-gray-400 hover:text-white">Promo</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-lg mb-4">Kontak Kami</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                            <span>Jakarta, Indonesia</span>
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                            <span>contact@aginfashion.com</span>
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                            <span>+62 857 7471 2676</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-12 border-t border-gray-700 pt-6 text-center text-gray-500">
+                <p>© 2025 A-GIN FASHION. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div id="product-modal" class="hidden fixed inset-0 bg-black bg-opacity-60 z-50 flex justify-center items-center p-4">
+        <div class="bg-white rounded-lg shadow-2xl w-full max-w-4xl max-h-[90vh] overflow-y-auto flex flex-col md:flex-row">
+            <div class="md:w-1/2">
+                <img id="modal-img" src="" alt="Detail Produk" class="w-full h-64 md:h-full object-cover rounded-t-lg md:rounded-l-lg md:rounded-t-none">
+            </div>
+            <div class="md:w-1/2 p-8 flex flex-col">
+                <div class="flex-grow">
+                    <div class="flex justify-between items-start">
+                        <h2 id="modal-name" class="text-3xl font-bold text-gray-800 mb-2">Nama Produk</h2>
+                        <button id="close-modal" class="text-gray-500 hover:text-gray-800 text-3xl">&times;</button>
+                    </div>
+                    <div class="flex items-center mt-2 mb-4">
+                        <p id="modal-discount" class="text-2xl font-bold text-pink-500">Harga Diskon</p>
+                        <p id="modal-price" class="text-lg text-gray-500 line-through ml-3">Harga Normal</p>
+                    </div>
+                    <p id="modal-desc" class="text-gray-600 mb-6">Deskripsi lengkap produk akan ditampilkan di sini.</p>
+                </div>
+                <a id="whatsapp-link" href="#" target="_blank" class="w-full mt-4 bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-lg text-center transition duration-300 flex items-center justify-center">
+                    <svg class="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.894 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.886-.001 2.267.655 4.398 1.908 6.161l-1.317 4.814 4.893-1.282zM9.068 8.921c-.322-.161-.655-.162-.977-.162-.292 0-.616.035-.898.317-.282.282-.977.962-1.199 2.245-.222 1.282.282 2.493.564 2.815.282.322 1.229 1.96 2.981 3.518 1.996 1.748 3.298 2.31 4.145 2.611.848.302 1.588.261 2.19.162.601-.1.977-.437 1.259-.865.282-.428.282-.799.197-1.018-.085-.22-.322-.363-.656-.525-.334-.162-1.977-.962-2.299-1.085-.322-.122-.564-.162-.807.162-.243.323-.889 1.085-1.085 1.307-.197.222-.379.252-.656.09-.277-.161-1.198-.437-2.282-1.409-.848-.765-1.424-1.71-1.591-1.996-.167-.283-.018-.448.144-.611.162-.162.323-.428.484-.63.162-.202.223-.323.334-.564.112-.242.056-.447-.028-.611-.084-.162-.807-1.922-.978-2.31z"/></svg>
+                    <span>Beli via WhatsApp</span>
+                </a>
+            </div>
+        </div>
+    </div>
+<script src="main.js"></script>
+</body>
+</html>

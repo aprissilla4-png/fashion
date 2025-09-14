@@ -1,0 +1,27 @@
+/* Custom Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .hero-banner {
+            /* Ganti 'url(...)' dengan path gambar banner Anda */
+            background-image:url('contoh.jpg'); linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://placehold.co/1920x800/e2e8f0/cccccc?text=Ganti+Gambar+Banner');
+            background-size: cover;
+            background-position: center;
+        }
+        .new-arrivals-banner {
+            /* Ganti 'url(...)' dengan path gambar New Arrivals Anda */
+            background-image:url('contoh.jpeg'); linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://placehold.co/1200x600/e2e8f0/cccccc?text=Gambar+New+Arrivals');
+            background-size: cover;
+            background-position: center;
+        }
+        .product-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .product-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+            
+  
